@@ -38,6 +38,16 @@ dsh plugin --profile web add /path/to/dsh-llm-auto-router
 
 > 建议先装核心的几个（见 `docs/PLUGINS.zh.md` 标注 ★）：`llm-auto-router`、`crosstalk`、`vision-toolkit`、`image-gen`；其余按需。
 
+也可用装配脚本一键完成（在 `deepseek-harness` 父目录或指定其路径运行）：
+
+```bash
+# Linux / macOS
+bash scripts/bootstrap.sh ../deepseek-harness
+
+# Windows (PowerShell)
+powershell -ExecutionPolicy Bypass -File scripts/bootstrap.ps1 -DshRoot E:\deepseek-harness
+```
+
 ### 3. 配置模型与环境变量
 
 1. 复制脱敏配置模板：

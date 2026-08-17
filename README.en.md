@@ -34,6 +34,16 @@ This repo is not new code from scratch — it is the **reproducible assembly of 
    - `export OPENCODE_GO_API_KEY=... SILICONFLOW_API_KEY=... SILICONFLOW_MIMO_VISION_API_KEY=... AIJWS_API_KEY=...`
    - Install agent presets from `presets/` into `~/.dsh/.agent-presets/`
 
+   Or run the assembly script (from the parent of `deepseek-harness`, or point it directly):
+
+   ```bash
+   # Linux / macOS
+   bash scripts/bootstrap.sh ../deepseek-harness
+
+   # Windows (PowerShell)
+   powershell -ExecutionPolicy Bypass -File scripts/bootstrap.ps1 -DshRoot E:\deepseek-harness
+   ```
+
 4. **Run**
    ```bash
    pnpm dsh --profile web
