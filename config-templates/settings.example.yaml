@@ -1,0 +1,105 @@
+# DeepSeek Harness — settings.yaml 复刻模板（脱敏）
+#
+# 复制为你的 ~/.dsh/settings.yaml 并替换下列占位环境变量。
+# 真实 API Key 一律走环境变量，绝不写入本文件 / 本仓库。
+
+ui-onboarding:
+  welcomeNoticeVersion: 2026-08-13.1
+
+llm-pi-ai:
+  providers:
+    opencode-go:
+      apiKeyEnv: OPENCODE_GO_API_KEY          # ← 你的 opencode-go key
+      defaultContextWindow: 1000000
+    siliconflow-mimo-vision:
+      auxiliaryOnly: true
+      displayName: SiliconFlow MiMo Vision
+      apiKeyEnv: SILICONFLOW_MIMO_VISION_API_KEY
+      api: openai-completions
+      baseURL: https://api.siliconflow.cn/v1
+      models:
+        - id: moonshotai/Kimi-K2.7-Code
+          input: [ text, image ]
+          name: Kimi K2.7 Code (vision assist)
+    aijws-openai:
+      displayName: AIJWS OpenAI Compatible
+      apiKeyEnv: AIJWS_API_KEY
+      api: openai-completions
+      baseURL: https://api.aijws.com/v1
+      models:
+        - id: deepseek-v4-pro
+          input: [ text ]
+          name: DeepSeek V4 Pro (AIJWS)
+          contextWindow: 1000000
+          maxTokens: 384000
+          reasoningEfforts:
+            off:
+            high: high
+            max: max
+          compat:
+            thinkingFormat: deepseek
+            supportsReasoningEffort: false
+
+web-search-deepseek:
+  baseURL: https://api.anysearch.com/v1/search
+  maxUses: 10
+
+permission:
+  defaultPreset: danger-full-access
+
+agent-presets:
+  default: router-flash
+
+# 关键：用 deepseek-v4-auto 触发 llm-auto-router 插件，
+# 让 Flash/Pro 按任务自动调度（轻活→Flash，重活→Pro），任意模式可用。
+agent-default-model:
+  provider: opencode-go
+  model: deepseek-v4-auto
+  reasoningEffort: high
+
+vision-assist:
+  enabled: true
+  provider: siliconflow-mimo-vision
+  model: moonshotai/Kimi-K2.7-Code
+  maxTokens: 1200
+
+vision-toolkit:
+  enabled: true
+  maxTokens: 1200
+  routes:
+    - provider: siliconflow-mimo-vision
+      model: moonshotai/Kimi-K2.7-Code
+  autoDiscover: true
+
+dsh-better-sidebar:
+  interceptOpenPath: true
+
+# remote-web-ui：远程访问可选。公开 URL / 联机令牌为敏感信息，自行配置。
+# remote-web-ui:
+#   publicBaseUrl: <你的反向代理或 relay 地址>
+#   autoTunnel: false
+#   tokenTtlMs: 60000000
+
+ui-theme:
+  preference: system
+
+auto-continue:
+  notify: true
+
+vision-router:
+  routing: true
+  onboardingSeen: true
+
+image-gen:
+  providers:
+    - name: siliconflow
+      baseURL: https://api.siliconflow.cn/v1
+      model: Kwai-Kolors/Kolors
+      apiKeyEnv: SILICONFLOW_API_KEY
+      size: 1024x1024
+  verifyProviders:
+    - name: siliconflow
+      baseURL: https://api.siliconflow.cn/v1
+      model: Qwen/Qwen3-VL-32B-Instruct
+      apiKeyEnv: SILICONFLOW_API_KEY
+  verify: true

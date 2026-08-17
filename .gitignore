@@ -1,0 +1,17 @@
+# secrets / credentials — never commit
+.env
+*.key
+*.pem
+settings.yaml          # real settings (use config-templates/settings.example.yaml)
+.credentials.yaml
+crosstalk/
+
+# install artifacts
+plugins/
+node_modules/
+*.tgz
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
