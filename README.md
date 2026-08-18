@@ -13,6 +13,16 @@
 - 内置 4 套 agent 模式（preset），介绍已中文化
 - 配置模板已脱敏，无任何真实密钥外泄
 
+## 版本基线（2026-08）
+
+| 组件 | 版本 |
+|---|---|
+| DeepSeek Harness (dsh) | **`0.1.0-rc.7`**（含本地二开：launcher / auto-continue decline-term / ContextMeter / atomic-write 等） |
+| 核心插件 | ssh / remote-web-ui `0.2.1`, dshmarket `1.14.0`, skill-hub `0.2.2`, vision-router `1.6.2`, interconnect `0.6.4`, wechat `0.4.2` 等全部最新 |
+| llm-auto-router | `v0.1.0`（多 provider，默认 opencode-go） |
+
+> 维护者可复刻路径：官方 `upgrade-rc7` 分支 = rc.7 核心 + 完整二开（`lileikeji/deepseek-harness`）。
+
 ## 快速开始（3 步）
 
 ### 1. 安装 DeepSeek Harness

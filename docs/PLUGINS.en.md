@@ -6,13 +6,13 @@ Tracks the complete plugin assembly of the `lileikeji` DSH system, so anyone can
 
 | Component | Origin | Notes |
 |---|---|---|
-| DeepSeek Harness (dsh) | https://github.com/deepseek-ai/deepseek-harness | plugin-based agent harness (vendored Cordis); runs on `0.1.0-rc.5 / rc.6` |
+| DeepSeek Harness (dsh) | https://github.com/deepseek-ai/deepseek-harness | plugin-based agent harness (vendored Cordis); runs on **`0.1.0-rc.7`** with local secondary-dev (see README "Version baseline") |
 
 ## Bundles (origin = git fetch; fork = has an upstream remote)
 
 | Plugin | Bundle | Origin | Fork | Purpose |
 |---|---|---|---|---|
-| agent-team-room | `dsh-agent-team-room` | ishuowang/dsh-agent-team-room | - | persistent multi-agent rooms (membership/messaging/tasks/timeline) |
+| agent-team-room | `dsh-agent-team-room` | ishuowang/dsh-agent-team-room | - | persistent multi-agent rooms (membership/messaging/tasks/timeline). This assembly merges upstream room-mention/invite enhancements, keeping the local "footer entry disabled" secondary-dev |
 | anchored-standard | `dsh-anchored-standard` | xiaobright/dsh-anchored-standard | - | preset: Minimal bootstrap then full tools |
 | ankh-guard | `@khorsheed/dsh-ankh-guard` | Khorsheed/dsh-ankh-guard | - | green-build gate for self-modification restarts |
 | auto-compact | `dsh-auto-compact` | lileikeji/dsh-auto-compact | - | auto context compaction (token-pressure threshold) |

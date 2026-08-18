@@ -13,6 +13,16 @@ This repo is not new code from scratch — it is the **reproducible assembly of 
 - Four agent presets included, with Chinese introduction.
 - Config template is sanitized — no real secrets.
 
+## Version baseline (2026-08)
+
+| Component | Version |
+|---|---|
+| DeepSeek Harness (dsh) | **`0.1.0-rc.7`** (with local secondary-dev: launcher / auto-continue decline-term / ContextMeter / atomic-write) |
+| Core plugins | ssh / remote-web-ui `0.2.1`, dshmarket `1.14.0`, skill-hub `0.2.2`, vision-router `1.6.2`, interconnect `0.6.4`, wechat `0.4.2` — all latest |
+| llm-auto-router | `v0.1.0` (multi-provider, opencode-go default) |
+
+> Maintainer repro path: official `upgrade-rc7` branch = rc.7 core + full secondary-dev (`lileikeji/deepseek-harness`).
+
 ## Quick start (3 steps)
 
 1. **Install DSH**

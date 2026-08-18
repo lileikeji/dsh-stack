@@ -6,7 +6,7 @@
 
 | 组件 | 来源 | 说明 |
 |---|---|---|
-| DeepSeek Harness (dsh) | https://github.com/deepseek-ai/deepseek-harness | 插件化 agent harness（vendored Cordis），本系统运行于其 `0.1.0-rc.5 / rc.6` 之上 |
+| DeepSeek Harness (dsh) | https://github.com/deepseek-ai/deepseek-harness | 插件化 agent harness（vendored Cordis），本系统运行于其 **`0.1.0-rc.7`** 之上（含本地二开，见 README「版本基线」） |
 
 ## 二、第三方 / 自有 bundle 插件
 
@@ -14,7 +14,7 @@
 
 | 插件 | bundle 名 | 本源（origin） | 二创（fork 自） | 用途 |
 |---|---|---|---|---|
-| agent-team-room | `dsh-agent-team-room` | ishuowang/dsh-agent-team-room | - | 持久化多 agent 房间（成员/消息/任务/共享时间线） |
+| agent-team-room | `dsh-agent-team-room` | ishuowang/dsh-agent-team-room | - | 持久化多 agent 房间（成员/消息/任务/共享时间线）。本装配已合并上游 room-mention/邀请等增强，且保留本地「禁用 footer 入口」二开 |
 | anchored-standard | `dsh-anchored-standard` | xiaobright/dsh-anchored-standard | - | agent preset：Minimal 引导后开放完整工具 |
 | ankh-guard | `@khorsheed/dsh-ankh-guard` | Khorsheed/dsh-ankh-guard | - | 自修改重启的绿色构建门禁 |
 | auto-compact | `dsh-auto-compact` | lileikeji/dsh-auto-compact | - | 自动上下文压缩（token 压力阈值触发） |
