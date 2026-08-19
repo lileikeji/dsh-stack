@@ -22,6 +22,7 @@ Tracks the complete plugin assembly of the `lileikeji` DSH system, so anyone can
 | launcher | `dsh-launcher` | lileikeji/dsh-launcher | - | Windows launcher (boot web + relay tunnel + browser) |
 | llm-auto-router | `@dsh-external/dsh-llm-auto-router` | lileikeji/dsh-llm-auto-router | - | Flash/Pro auto-scheduler, mode-independent |
 | mcp-agent-example | `dsh-mcp-agent-example` | lileikeji/dsh-mcp-agent-example | - | bridge official MCP tools as `mcp__<server>__<tool>` |
+| memory | `dsh-agent-memory` | Culeot/dsh-agent-memory | - | cross-session long-term memory (remember/recall/index/forget over ctx.storage, schema-validated). Orthogonal to crosstalk/interconnect: memory=vertical accumulation, messaging=horizontal collaboration |
 | relay-broker | `dsh-relay-broker` | lileikeji/dsh-relay-broker | - | multi-host relay (remote WebUI port forwarding, HMAC tokens) |
 | routing-suite | `dsh-routing-suite` | yjh051108/dsh-routing-suite | - | routing research toolset (upstream) |
 | session-doctor | `dsh-session-doctor` | mayf3/dsh-session-doctor | - | session diagnostics |

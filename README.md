@@ -19,6 +19,8 @@
 |---|---|
 | DeepSeek Harness (dsh) | **`0.1.0-rc.7`**（含本地二开：launcher / auto-continue decline-term / ContextMeter / atomic-write 等） |
 | 核心插件 | ssh / remote-web-ui `0.2.1`, dshmarket `1.14.0`, skill-hub `0.2.2`, vision-router `1.6.2`, interconnect `0.6.4`, wechat `0.4.2` 等全部最新 |
+| crosstalk | `v0.2.0`（含 `trace_issue` 跨会话溯源 + `coord_peers` 同工作区冲突协商；`v0.1.0` 的跨会话消息/auto-collab 保留） |
+| memory | `dsh-agent-memory` `0.8.4` 源码注入（`remember/recall/index/forget` 跨会话记忆，正交于通信） |
 | llm-auto-router | `v0.1.0`（多 provider，默认 opencode-go） |
 
 > 维护者可复刻路径：官方 `upgrade-rc7` 分支 = rc.7 核心 + 完整二开（`lileikeji/deepseek-harness`）。

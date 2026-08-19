@@ -24,6 +24,7 @@
 | launcher | `dsh-launcher` | lileikeji/dsh-launcher | - | Windows 启动器（boot web + relay 隧道 + 开浏览器） |
 | llm-auto-router | `@dsh-external/dsh-llm-auto-router` | lileikeji/dsh-llm-auto-router | - | **Flash/Pro 自动调度**，任意模式可用 |
 | mcp-agent-example | `dsh-mcp-agent-example` | lileikeji/dsh-mcp-agent-example | - | 桥接官方 MCP server 工具为 `mcp__<server>__<tool>` |
+| memory | `dsh-agent-memory` | Culeot/dsh-agent-memory | - | 跨会话长期记忆（remember/recall/index/forget，基于 ctx.storage，schema 校验）。与 crosstalk/interconnect 正交：记忆=纵向积累，通信=横向协作 |
 | relay-broker | `dsh-relay-broker` | lileikeji/dsh-relay-broker | - | 多主机中继（远程 WebUI 端口转发，HMAC 令牌） |
 | routing-suite | `dsh-routing-suite` | yjh051108/dsh-routing-suite | - | 路由研究工具集（上游） |
 | session-doctor | `dsh-session-doctor` | mayf3/dsh-session-doctor | - | 会话诊断 |

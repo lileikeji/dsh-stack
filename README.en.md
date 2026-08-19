@@ -19,6 +19,8 @@ This repo is not new code from scratch — it is the **reproducible assembly of 
 |---|---|
 | DeepSeek Harness (dsh) | **`0.1.0-rc.7`** (with local secondary-dev: launcher / auto-continue decline-term / ContextMeter / atomic-write) |
 | Core plugins | ssh / remote-web-ui `0.2.1`, dshmarket `1.14.0`, skill-hub `0.2.2`, vision-router `1.6.2`, interconnect `0.6.4`, wechat `0.4.2` — all latest |
+| crosstalk | `v0.2.0` (adds `trace_issue` cross-session attribution + `coord_peers` same-cwd conflict negotiation; keeps v0.1.0 messaging/auto-collab) |
+| memory | `dsh-agent-memory` `0.8.4` source-injected (`remember/recall/index/forget`; orthogonal to messaging) |
 | llm-auto-router | `v0.1.0` (multi-provider, opencode-go default) |
 
 > Maintainer repro path: official `upgrade-rc7` branch = rc.7 core + full secondary-dev (`lileikeji/deepseek-harness`).
