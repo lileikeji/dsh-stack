@@ -22,6 +22,7 @@
 | crosstalk | `v0.2.0`（含 `trace_issue` 跨会话溯源 + `coord_peers` 同工作区冲突协商；`v0.1.0` 的跨会话消息/auto-collab 保留） |
 | memory | `dsh-agent-memory` `0.8.4` 源码注入（`remember/recall/index/forget` 跨会话记忆，正交于通信） |
 | llm-auto-router | `v0.1.0`（多 provider，默认 opencode-go） |
+| api-key-pool | `v0.3.0`（多 key 轮换 + 失败切换 + 厂商自动列表，rc.8 兼容 fork） |
 
 > 维护者可复刻路径：官方 `upgrade-rc8-main` 分支 = rc.8 核心 + 完整二开（`lileikeji/deepseek-harness`）。
 

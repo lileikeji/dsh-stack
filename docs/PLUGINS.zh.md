@@ -18,6 +18,7 @@
 | anchored-standard | `dsh-anchored-standard` | xiaobright/dsh-anchored-standard | - | agent preset：Minimal 引导后开放完整工具 |
 | ankh-guard | `@khorsheed/dsh-ankh-guard` | Khorsheed/dsh-ankh-guard | - | 自修改重启的绿色构建门禁 |
 | auto-compact | `dsh-auto-compact` | lileikeji/dsh-auto-compact | - | 自动上下文压缩（token 压力阈值触发） |
+| api-key-pool | `dsh-api-key-pool` | lileikeji/dsh-api-key-pool | **xiaozhe7772222/dsh-api-key-pool**（二创） | API Key 轮换池（多 key 自动轮换 + 失败切换 + 冷却恢复）。fork 增强：rc.8 keyed 卡片兼容、自动列出所有已连接厂商（settings.describe）、去除内置示例池 |
 | auto-continue | `dsh-auto-continue` | lileikeji/dsh-auto-continue | - | 中断任务自动续跑 |
 | crosstalk | `@dsh-crosstalk/bundle` | lileikeji/dsh-crosstalk | **Jesse-njx/dsh-crosstalk**（二创） | 跨会话横向消息 + 事件驱动 auto-collab |
 | image-gen | `dsh-image-gen` | lileikeji/dsh-image-gen | - | 生图链（SiliconFlow/CogView/万相/OpenAI 兼容）+ 验证 |

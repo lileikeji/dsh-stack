@@ -22,6 +22,7 @@ This repo is not new code from scratch — it is the **reproducible assembly of 
 | crosstalk | `v0.2.0` (adds `trace_issue` cross-session attribution + `coord_peers` same-cwd conflict negotiation; keeps v0.1.0 messaging/auto-collab) |
 | memory | `dsh-agent-memory` `0.8.4` source-injected (`remember/recall/index/forget`; orthogonal to messaging) |
 | llm-auto-router | `v0.1.0` (multi-provider, opencode-go default) |
+| api-key-pool | `v0.3.0` (multi-key rotation + failover + provider auto-list; rc.8-compatible fork) |
 
 > Maintainer repro path: official `upgrade-rc8-main` branch = rc.8 core + full secondary-dev (`lileikeji/deepseek-harness`).
 

@@ -16,6 +16,7 @@ Tracks the complete plugin assembly of the `lileikeji` DSH system, so anyone can
 | anchored-standard | `dsh-anchored-standard` | xiaobright/dsh-anchored-standard | - | preset: Minimal bootstrap then full tools |
 | ankh-guard | `@khorsheed/dsh-ankh-guard` | Khorsheed/dsh-ankh-guard | - | green-build gate for self-modification restarts |
 | auto-compact | `dsh-auto-compact` | lileikeji/dsh-auto-compact | - | auto context compaction (token-pressure threshold) |
+| api-key-pool | `dsh-api-key-pool` | lileikeji/dsh-api-key-pool | **xiaozhe7772222/dsh-api-key-pool** (fork) | API key rotation pool (multi-key round-robin + failover + cooldown recovery). Fork adds: rc.8 keyed card compat, auto-list all connected providers via settings.describe, removed built-in example pools |
 | auto-continue | `dsh-auto-continue` | lileikeji/dsh-auto-continue | - | auto-resume interrupted tasks |
 | crosstalk | `@dsh-crosstalk/bundle` | lileikeji/dsh-crosstalk | **Jesse-njx/dsh-crosstalk** (fork) | cross-session messaging + event-driven auto-collab |
 | image-gen | `dsh-image-gen` | lileikeji/dsh-image-gen | - | image gen chain + verification |
